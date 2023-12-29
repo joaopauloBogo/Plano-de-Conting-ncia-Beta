@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Contingência</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/arp.png">
+</head>
+
+    <div class="nav">
+         <div class="logo">
+            <a href="../index.html"> <img src="./img/logo arp 1.png" alt="">  </a>
+        </div>
+    </div>
+    <div class="pag8">
+        <h3>6. Script Objetivo</h3>
+        <div class="tooltip6">
+          <a href="https://vimeo.com/898586689/30619a7ebe?share=copy" target="_blank">
+              <img id="lampada6" src="./img/lampada_2.png" alt="Lâmpada">
+          </a>
+           <span class="tooltiptext6">Além disso, o plano deve conter um script (roteiro) detalhado de acionamento e um anexo
+            com os diversos telefones dos profissionais a serem acionados, bem como órgãos de
+            segurança pública, corpo de bombeiros e outras instituições consideradas relevantes neste
+            processo.<br>
+            <br>
+            Enquanto a Dinâmica dos Fatos possibilita que se tenha uma visão mais abrangente do
+            evento de risco em questão, o Script fornece um passo a passo detalhado do que deve ser
+            feito, dentro da sequência lógica.
+          </span> 
+        </div>
+    
+
+        <div id="tabelass">
+            <table colspan="2">
+              <tr>
+             <tr colspan="2">
+                  <td   contenteditable="true">Risco Crítico 1:</td>
+              </tr>
+    
+              </tr>
+              <tr>
+               <th>Sequências</th>
+                <th>Ações</th>
+                
+              </tr>
+              <tr>
+                <th>1</th>
+                <td contenteditable="true"></td>
+              
+              </tr>
+              <tr>
+                <th>2</th>
+                <td contenteditable="true"></td>
+               
+              </tr>
+              <tr>
+                <th>3</th>
+                <td contenteditable="true"></td>
+                
+              </tr>
+              <tr>
+                <th>4</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>5</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>6</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>7</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>8</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>9</th>
+                <td contenteditable="true"></td>  
+              </tr>
+              <tr>
+                <th>10</th>
+                <td contenteditable="true"></td>  
+              </tr>
+            </table>
+    
+    
+    
+          </div>
+
+          <button onclick="adicionarTabela()">Adicionar Tabela</button>
+          <button onclick="excluirUltimaTabela()">Excluir Tabela</button>
+          <style>
+            table {
+      border-collapse: collapse;
+      width: 80%;
+      margin-bottom: 16px;
+    }
+    .risco-celula {
+                width: 70%; /* Ajuste a largura conforme necessário */
+            }
+    
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    input {
+      width: 100%;
+    }
+    
+    input::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+    
+    button {
+      margin: 4px 0;
+      margin-left: 7%;
+    
+    }
+        </style>
+            <script>
+                function adicionarTabela() {
+                    var tabelaOriginal = document.querySelector('#tabelass table');
+                    var novaTabela = tabelaOriginal.cloneNode(true);
+        
+                    var numeroRisco = document.querySelectorAll('#tabelass table').length + 1;
+                    var primeiraCelula = novaTabela.querySelector('[contenteditable="true"]');
+                    primeiraCelula.textContent = 'Risco Crítico: ' + numeroRisco;
+        
+                    var cells = novaTabela.querySelectorAll('[contenteditable="true"]:not(:first-child)');
+                    cells.forEach(function (cell) {
+                        cell.textContent = '';
+                    });
+        
+                    document.querySelector('#tabelass').appendChild(novaTabela);
+                    salvarDados();
+                }
+        
+                function excluirUltimaTabela() {
+                    var tabelas = document.querySelectorAll('#tabelass table');
+                    if (tabelas.length > 1) {
+                        var ultimaTabela = tabelas[tabelas.length - 1];
+                        ultimaTabela.remove();
+                        salvarDados();
+                    }
+                }
+        
+   
+        
+                function carregarDados() {
+                    var dadosSalvos = localStorage.getItem('dadosTabelaPag8'); // Adicione "Pag8" à chave
+                    if (dadosSalvos) {
+                        document.getElementById('tabelass').innerHTML = dadosSalvos;
+                    }
+                }
+        
+                function salvarDados() {
+                    var tabelaHTML = document.getElementById('tabelass').innerHTML;
+                    localStorage.setItem('dadosTabelaPag8', tabelaHTML); // Adicione "Pag8" à chave
+                }
+        
+                window.addEventListener('beforeunload', salvarDados);
+                carregarDados();
+            </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+<a href="pdf.html">
+    <img class="seta" src="./img/seta-direita 1.png" alt="Seta">
+</a>
+
+<a href="pag7.html">
+    <img class="seta2" src="./img/seta-direita 2.png" alt="seta">
+
+</a>
+
+
+
+
+<!-- processo de encerramento -->
+
+   
+<!-- processo de acionamento -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript>
+  <p class="noscript-aviso">O JavaScript tem que ser ativado para que você possa visualizar esta página
+      corretamente. Porém, aparentemente, o JavaScript está desativado ou é incompatível com o seu
+      navegador. Ative o JavaScript alterando as opções do navegador e 
+      tente novamente</p>
+</noscript>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</body>
+</html>

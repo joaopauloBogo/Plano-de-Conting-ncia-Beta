@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Contingência</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   
+    <link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="./js/pdf.js"></script>
+  <script src="./js/pag14.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="shortcut icon" type="imagex/png" href="./img/arp.png">
+   
+
+ 
+</head>
+
+<body class="babilonia">
+    <div class="nav2">
+         <div class="logo2">
+            
+            <a href="../index.html"> <img src="./img/logo arp 1.png" alt="">  </a>
+            <div class="butao">
+            <button onclick="gerarPDF()">Gerar PDF</button>
+            </div>
+        </div>
+    
+    </div>
+
+    <header class="capa2">
+        <h1>Gere seu PDF</h1>
+    
+    <a href="pag14.html">
+        <img class="seta2" src="./img/seta-direita 2.png" alt="seta">
+    </a>
+    </header>  
+
+<div id="element" class="danone">
+              <div class="capa2">
+                  <h1>Plano de Contingência</h1>
+                  <h3 id="nomempresa" contenteditable="true">Nome da Empresa</h3>
+                  <p id="anomes" contenteditable="true"><b>Ano/Mês</b></p>
+                  
+              </div>
+          
+        <div class="html2pdf__page-break"></div>
+      
+      <!-- indice1 -->
+        
+      <div class="indice">
+        <h2>Índice</h2>
+    <ul>
+       <b><li>1. Finalidade</li>
+        <li>2. Objetivos</li>
+        <li>3. Business Overview</li>
+        <li>4. Business Impact Analysis</li>
+        <li>5. Dinâmica do Risco & Ações de Contingência </li>
+        <li>6. Script Objetivo</li></b> 
+        
+        
+    
+        
+        <!--
+                    <li>5.2 Critérios de Encerramento</li> Adicione outros itens do índice conforme necessário -->
+    </ul>
+    </div>
+    <div class="html2pdf__page-break"></div>  
+        <!-- indice2 -->
+
+       
+        <!-- pagina4 -->
+        
+        <div class="pag4">
+          <h3>1. Finalidade</h3>
+    
+          <p id="Finalidade" contenteditable="true">
+                  Este documento visa definir as principais ações de contingências para os principais riscos
+                   críticos.<br>
+                  Ele dá flexibilidade para que as ações aqui definidas possam ser executadas de maneira
+                  automatizada. Contudo, as ações que envolvam mídia, risco exacerbado de imagem,
+                  responsabilidade jurídica criminal e / ou grandes valores devem ser submetidas, de
+                  maneira sumária ao conselho desta organização para sua aprovação em regime de
+                  emergência.</p>
+      </div>
+  
+      <div class="pag4">
+          <h3>2. Objetivos</h3>
+  
+    
+          <p id="Objetivo" contenteditable="true">
+              - Definir as ações de contingência para cada um dos principais riscos críticos<br>
+              <br>
+              - Definir o sequenciamento de ações de contingência de acordo com a dinâmica do evento de risco<br>
+              <br>
+              - Definir a sequência de acionamento dos atores envolvidos no contingenciamento dos riscos<br>
+                <br>
+                - Definir o tipo de informação a ser disponibilizado a cada ator envolvido nas ações de mitigação<br>
+                <br>
+                - Coordenar o emprego dos meios necessários para estabelecer as ações de contingência
+                <br>
+             
+      </div>
+  
+        
+        <div class="html2pdf__page-break"></div>
+        
+        <!-- pagina5 -->
+
+        <div class="pag5">
+          <h3>3. Overview (Business Overview)</h3>
+          <p id="Overview" contenteditable="true">
+              A XPTO é um dos maiores operadores logísticos do Brasil, estando entre os 5 maiores e
+              volume de cargas transportadas, entre os 3 primeiros em volume de carga armazenada e
+              entre os 10 primeiros em volume de carga movimentada.<br>
+              <br>
+              Sua operação concentrasse na Região Sul e na Região Sudeste do Brasil, com presença em
+              todas as capitais de todos os 7 estados destas regiões. Ainda opera, em parceria, em todas
+              as capitais brasileiras das demais regiões.<br>
+              <br>
+              Atualmente, opera nos 4 principais modais: rodoviário, aéreo, ferroviário e marítimo
+              (principalmente fluvial e cabotagem). Opera com recursos próprios e com parceiros nestes 4
+              modais. Transporta em média um volume de 72.000 TEUs / mês, somando-se os 4 modais.<br>
+              <br>
+              A XPTO possui 11 unidades alfandegadas, 5 Centros de Distribuição Logística, 2 terminais
+              portuários, 2 terminais aéreos e 250 km de malha ferroviária.<br>
+              <br>
+              Seus principais clientes em volume transportado são da indústria farmacêutica, indústria de
+              auto-peças, indústria de eletro-eletrônicos e indústria química. Enquanto em valor
+              transportado são da indústria de eletro-eletrônicos e indústria de farmacêuticos,
+              respectivamente.<br>
+              <br>
+              Seu principal diferencial competitivo é a capacidade de integração entre os diversos modais
+              e entre os diversos sistemas existentes em operações logísticas de grande porte. <br>
+               <br>A meta para os próximos 5 anos é aumentar o Market share (participação de mercado) nos 3
+              principais segmentos em que atua (eletro-eletrônicos, farmacêuticos e química fina) e
+              aumentar o nível de integração nos 4 modais em que atua.<p/>
+      </div>  
+        
+        <div class="html2pdf__page-break"></div>
+        
+        <!-- pagina6 -->
+        <div class="pag12">
+          <h3>4. Business Impact Analysis</h3>
+      </div>
+     
+  
+        
+      
+          <style>
+              table {
+                  border-collapse: collapse;
+                  width: 100%;
+              }
+  
+              th, td {
+                  border: 1px solid black;
+                  padding: 8px;
+                  text-align: left;
+              }
+  
+              th {
+                  background-color: #f2f2f2;
+              }
+  
+              .color-option {
+                  width: 20px;
+                  height: 20px;
+                  margin: 2px;
+                  cursor: pointer;
+              }
+          </style>
+          <div id="tabcor">
+          <table>
+              <tr>
+                  <th colspan="3" contenteditable="true">Descritivo de Risco:</th>
+              </tr>
+              <tr>
+                  <td contenteditable="true" >
+                      Impacto Estratégico:
+                  
+                  </td>
+                  <td id="impacto">
+                      Impacto
+                      <div class="color-option" style="background-color: #ff0000;" onclick="setColor('impacto', '#ff0000')"></div>
+                      <div class="color-option" style="background-color: green;" onclick="setColor('impacto', 'green')"></div>
+                      <div class="color-option" style="background-color: #87CEFA;" onclick="setColor('impacto', '#87CEFA')"></div>
+                      <div class="color-option" style="background-color: #ffff00;" onclick="setColor('impacto', '#ffff00')"></div>
+                      <div class="color-option" style="background-color: orangered;" onclick="setColor('impacto', 'orangered')"></div>
+                      <div class="color-option" style="background-color: white;" onclick="setColor('impacto', 'white')"></div>
+  
+                  </td>
+                  <td id="possibilidade">
+                      Probabilidade
+                      <div class="color-option" style="background-color: red;" onclick="setColor('possibilidade', '#ff0000')"></div>
+                      <div class="color-option" style="background-color: green;" onclick="setColor('possibilidade', 'green')"></div>
+                      <div class="color-option" style="background-color: #87CEFA;" onclick="setColor('possibilidade', '#87CEFA')"></div>
+                      <div class="color-option" style="background-color: #ffff00;" onclick="setColor('possibilidade', '#ffff00')"></div>
+                      <div class="color-option" style="background-color: orangered;" onclick="setColor('possibilidade', 'orangered')"></div>
+                      <div class="color-option" style="background-color: white;" onclick="setColor('possibilidade', 'white')"></div>
+  
+                  </td>
+              </tr>
+              <tr>
+                  <th colspan="3" style="text-align: center;">Impacto nas Variáveis</th>
+              </tr>
+              <tr>
+                  <td contenteditable="true">Clientes:</td>
+                  <td contenteditable="true">Patrimônio:</td>
+                  <td contenteditable="true">Mídia / Imagem:</td>
+              </tr>
+              <tr>
+                  <td contenteditable="true">Negócio / Financeiro:</td>
+                  <td contenteditable="true">Público Interno:</td>
+                  <td contenteditable="true">Legal:</td>
+              </tr>
+              <tr>
+                  <td contenteditable="true">Comunidade:</td>
+                  <td contenteditable="true">Outros:</td>
+                  <td></td>
+              </tr>
+          </table></div>
+  </div>
+  
+  
+     
+  
+          <script>
+        // Função para definir a cor em elementos específicos
+        function setColor(elementId, color) {
+              var element = document.getElementById(elementId);
+              element.style.backgroundColor = color;
+              saveContentToLocalStorage(); // Chama a função para salvar no Local Storage
+          }
+  
+          // Função para salvar o conteúdo no Local Storage
+          function saveContentToLocalStorage() {
+              var tableContent = document.getElementById('tabcor').innerHTML;
+              localStorage.setItem('tableContent', tableContent);
+          }
+  
+          // Função para carregar o conteúdo do Local Storage ao carregar a página
+          function loadContentFromLocalStorage() {
+              var tableContent = localStorage.getItem('tableContent');
+              if (tableContent) {
+                  document.getElementById('tabcor').innerHTML = tableContent;
+              }
+          }
+  
+          // Adiciona um ouvinte de evento ao carregar a página
+          document.addEventListener('DOMContentLoaded', function () {
+              loadContentFromLocalStorage();
+          });
+  
+          // Adiciona ouvintes de evento para detectar mudanças no conteúdo e salvar no Local Storage
+          var contentEditableElements = document.querySelectorAll('[contenteditable="true"]');
+          contentEditableElements.forEach(function (element) {
+              element.addEventListener('input', function () {
+                  saveContentToLocalStorage();
+              });
+          });
+  
+          </script>
+ <div class="html2pdf__page-break"></div>
+
+        
+  <div class="html2pdf__page-break"></div>
+      
+        <!-- pagina7 dando pau -->
+        <div class="pag6">
+          <h4>5. Dinâmica do Risco & Ações de Contingência</h4>
+     
+      </div>
+      <div id="tabelas">
+          <table>
+            <tr>
+           <tr >
+                <td  contenteditable="true">Risco 1:</td>
+            </tr>
+  
+            </tr>
+            <tr>
+             <th>Fases</th>
+              <th>1.</th>
+              <th>2.</th>
+              <th>3.</th>
+              <th>4.</th>
+            </tr>
+            <tr>
+              <th>Dinâmica dos Fatos</th>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <th>Ações de Contingência</th>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <th>Cadeia de Acionamento</th>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <th>Informações Necessárias</th>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+  
+          </table>
+  
+  
+  
+        </div>
+  
+    
+        <style>
+          table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 16px;
+  }
+  .risco-celula {
+              width: 70%; /* Ajuste a largura conforme necessário */
+          }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  button {
+    margin: 4px 0;
+    margin-left: 7%;
+  
+  }
+      </style>
+    <script>
+    function adicionarTabela() {
+      // Clona a tabela original
+      var tabelaOriginal = document.querySelector('#tabelas table');
+      var novaTabela = tabelaOriginal.cloneNode(true);
+  
+      // Incrementa o número do risco na nova tabela
+      var numeroRisco = document.querySelectorAll('#tabelas table').length + 1;
+      var primeiraCelula = novaTabela.querySelector('[contenteditable="true"]');
+      primeiraCelula.textContent = 'Risco ' + numeroRisco;
+  
+      // Limpa os conteúdos editáveis das outras células da nova tabela
+      var cells = novaTabela.querySelectorAll('[contenteditable="true"]:not(:first-child)');
+      cells.forEach(function (cell) {
+          cell.textContent = '';
+      });
+  
+      // Adiciona a nova tabela à div
+      document.querySelector('#tabelas').appendChild(novaTabela);
+  }
+  
+  // Função para excluir a última tabela adicionada
+  function excluirUltimaTabela() {
+      var tabelas = document.querySelectorAll('#tabelas table');
+      if (tabelas.length > 1) {
+          var ultimaTabela = tabelas[tabelas.length - 1];
+          ultimaTabela.remove();
+      }
+  }
+  
+  function carregarDados() {
+              var dadosSalvos = localStorage.getItem('dadosTabela');
+              if (dadosSalvos) {
+                  document.getElementById('tabelas').innerHTML = dadosSalvos;
+              }
+          }
+  
+          // Função para salvar os dados na localStorage
+          function salvarDados() {
+              var tabelaHTML = document.getElementById('tabelas').innerHTML;
+              localStorage.setItem('dadosTabela', tabelaHTML);
+          }
+  
+          // Adiciona um listener para salvar os dados antes de sair da página
+          window.addEventListener('beforeunload', salvarDados);
+  
+          // Carrega os dados ao carregar a página
+          carregarDados();
+  </script>
+          
+        
+ <div class="html2pdf__page-break"></div>
+        
+        <div class="pag8">
+          <h3>6. Script Objetivo</h3>
+   
+          </div>
+      
+  
+          <div id="tabelass">
+              <table colspan="2">
+                <tr>
+               <tr colspan="2">
+                    <td   contenteditable="true">Risco Crítico 1:</td>
+                </tr>
+      
+                </tr>
+                <tr>
+                 <th>Sequências</th>
+                  <th>Ações</th>
+                  
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td contenteditable="true"></td>
+                
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td contenteditable="true"></td>
+                 
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td contenteditable="true"></td>
+                  
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>8</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>9</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+                <tr>
+                  <th>10</th>
+                  <td contenteditable="true"></td>  
+                </tr>
+              </table>
+      
+      
+      
+            </div>
+  
+   
+            <style>
+              table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-bottom: 16px;
+      }
+      .risco-celula {
+                  width: 70%; /* Ajuste a largura conforme necessário */
+              }
+      
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      input {
+        width: 100%;
+      }
+      
+      input::placeholder {
+        color: #999;
+        font-style: italic;
+      }
+      
+      button {
+        margin: 4px 0;
+        margin-left: 7%;
+      
+      }
+          </style>
+              <script>
+                  function adicionarTabela() {
+                      var tabelaOriginal = document.querySelector('#tabelass table');
+                      var novaTabela = tabelaOriginal.cloneNode(true);
+          
+                      var numeroRisco = document.querySelectorAll('#tabelass table').length + 1;
+                      var primeiraCelula = novaTabela.querySelector('[contenteditable="true"]');
+                      primeiraCelula.textContent = 'Risco Crítico: ' + numeroRisco;
+          
+                      var cells = novaTabela.querySelectorAll('[contenteditable="true"]:not(:first-child)');
+                      cells.forEach(function (cell) {
+                          cell.textContent = '';
+                      });
+          
+                      document.querySelector('#tabelass').appendChild(novaTabela);
+                      salvarDados();
+                  }
+          
+                  function excluirUltimaTabela() {
+                      var tabelas = document.querySelectorAll('#tabelass table');
+                      if (tabelas.length > 1) {
+                          var ultimaTabela = tabelas[tabelas.length - 1];
+                          ultimaTabela.remove();
+                          salvarDados();
+                      }
+                  }
+          
+     
+          
+                  function carregarDados() {
+                      var dadosSalvos = localStorage.getItem('dadosTabelaPag8'); // Adicione "Pag8" à chave
+                      if (dadosSalvos) {
+                          document.getElementById('tabelass').innerHTML = dadosSalvos;
+                      }
+                  }
+          
+                  function salvarDados() {
+                      var tabelaHTML = document.getElementById('tabelass').innerHTML;
+                      localStorage.setItem('dadosTabelaPag8', tabelaHTML); // Adicione "Pag8" à chave
+                  }
+          
+                  window.addEventListener('beforeunload', salvarDados);
+                  carregarDados();
+              </script>
+  
+      
+  
+  
+  
+  
+  
+
+
+  
+        <a href="pag8.html">
+            <img class="seta2" src="./img/seta-direita 2.png" alt="seta">
+        </a>
+
+  
+<noscript>
+    <p class="noscript-aviso">O JavaScript tem que ser ativado para que você possa visualizar esta página corretamente. Porém, aparentemente, o JavaScript está desativado ou é incompatível com o seu navegador. Ative o JavaScript alterando as opções do navegador e <a href="http://www.yuricamara.com.br/">tente novamente</a>.</p>
+</noscript>
+   
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <script src="./js/pag14.js"></script>
+  <script src="./js/pag14.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    
+    function gerarPDF() {
+  const element = document.getElementById("element");
+
+  // Opções de configuração
+  const options = {
+    margins: 10,      // Margens em milímetros
+    filename: "Plano_de_Contingência.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 1},  // Ajuste esta escala para redimensionar o conteúdo
+    jsPDF: {
+      unit: "mm",       // Altere para "mm" para trabalhar com milímetros
+      format: "a3",     // Formato A4
+      orientation: "portrait", // Orientação retrato
+    }
+  };
+
+  html2pdf(element, options).from(element).outputPdf();
+}
+
+
+</script>
+
+
+</html>    

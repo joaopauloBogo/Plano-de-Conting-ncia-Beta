@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Contingência</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/arp.png">
+    <script src="./js/pag14.js"></script>
+
+    
+</head>
+
+    <div class="nav">
+         <div class="logo">
+            <a href="../index.html"> <img src="./img/logo arp 1.png" alt="">  </a>
+        </div>
+    </div>
+    <div class="pag6">
+        <h4>5. Dinâmica do Risco & Ações de Contingência</h4>
+        <div class="tooltip5">
+          <a href="https://vimeo.com/898586714/979d5f2d2d?share=copy" target="_blank">
+              <img id="lampada5" src="./img/lampada_2.png" alt="Lâmpada">
+          </a>
+           <span class="tooltiptext5">
+            Para se fazer a contenção de um risco, o mais importante é saber qual a sua dinâmica: 
+            dinâmica dos fatos (como ocorre, quais pessoas e setores estarão envolvidos etc). 
+            Baseado nesta informação é possível definir a lógica das ações de contingência, 
+            a lógica da cadeia de acionamento e a lógica para a disponibilização de informações.<br>
+            <br>
+            Ignorar a Dinâmica dos Fatos significa acionar prematuramente aqueles executivos que pouco ou nada conseguem contribuir 
+            com as ações operacionais iniciais para conter o evento de risco e deixar de acionar elementos fundamentais para executar as ações iniciais            
+            críticas. Significa facilitar com que o caos seja instalado e que se perca os minutos cruciais no início do evento de risco e que podem interferir muito no resultado final.
+        </span> 
+          </div>
+    </div>
+    <div id="tabelas">
+        <table>
+          <tr>
+         <tr >
+              <td  contenteditable="true">Risco 1:</td>
+          </tr>
+
+          </tr>
+          <tr>
+           <th>Fases</th>
+            <th>1.</th>
+            <th>2.</th>
+            <th>3.</th>
+            <th>4.</th>
+          </tr>
+          <tr>
+            <th>Dinâmica dos Fatos</th>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <th>Ações de Contingência</th>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <th>Cadeia de Acionamento</th>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <th>Informações Necessárias</th>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+
+        </table>
+
+
+
+      </div>
+
+      <button onclick="adicionarTabela()">Adicionar Tabela</button>
+      <button onclick="excluirUltimaTabela()">Excluir Tabela</button>
+      <style>
+        table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 16px;
+}
+.risco-celula {
+            width: 70%; /* Ajuste a largura conforme necessário */
+        }
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input {
+  width: 100%;
+}
+
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+button {
+  margin: 4px 0;
+  margin-left: 7%;
+
+}
+    </style>
+  <script>
+  function adicionarTabela() {
+    // Clona a tabela original
+    var tabelaOriginal = document.querySelector('#tabelas table');
+    var novaTabela = tabelaOriginal.cloneNode(true);
+
+    // Incrementa o número do risco na nova tabela
+    var numeroRisco = document.querySelectorAll('#tabelas table').length + 1;
+    var primeiraCelula = novaTabela.querySelector('[contenteditable="true"]');
+    primeiraCelula.textContent = 'Risco ' + numeroRisco;
+
+    // Limpa os conteúdos editáveis das outras células da nova tabela
+    var cells = novaTabela.querySelectorAll('[contenteditable="true"]:not(:first-child)');
+    cells.forEach(function (cell) {
+        cell.textContent = '';
+    });
+
+    // Adiciona a nova tabela à div
+    document.querySelector('#tabelas').appendChild(novaTabela);
+}
+
+// Função para excluir a última tabela adicionada
+function excluirUltimaTabela() {
+    var tabelas = document.querySelectorAll('#tabelas table');
+    if (tabelas.length > 1) {
+        var ultimaTabela = tabelas[tabelas.length - 1];
+        ultimaTabela.remove();
+    }
+}
+
+function carregarDados() {
+            var dadosSalvos = localStorage.getItem('dadosTabela');
+            if (dadosSalvos) {
+                document.getElementById('tabelas').innerHTML = dadosSalvos;
+            }
+        }
+
+        // Função para salvar os dados na localStorage
+        function salvarDados() {
+            var tabelaHTML = document.getElementById('tabelas').innerHTML;
+            localStorage.setItem('dadosTabela', tabelaHTML);
+        }
+
+        // Adiciona um listener para salvar os dados antes de sair da página
+        window.addEventListener('beforeunload', salvarDados);
+
+        // Carrega os dados ao carregar a página
+        carregarDados();
+</script>
+        
+
+
+<a href="pag8.html">
+    <img class="seta" src="./img/seta-direita 1.png" alt="Seta">
+</a>
+
+<a href="pag6_organograma.html">
+    <img class="seta2" src="./img/seta-direita 2.png" alt="seta">
+
+</a>
+<noscript>
+  <p class="noscript-aviso">O JavaScript tem que ser ativado para que você possa visualizar esta página
+      corretamente. Porém, aparentemente, o JavaScript está desativado ou é incompatível com o seu
+      navegador. Ative o JavaScript alterando as opções do navegador e 
+          tente novamente</p>
+</noscript>
+>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.5.1/joint.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</body>
+</html>
